@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Prism.Unity" Version="7.2.0.1422" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Launchpad.Module\Launchpad.Module.csproj" />
+      <ProjectReference Include="..\Member.Module\Member.Module.csproj" />
+      <ProjectReference Include="..\PsaDruck.Module\PsaDruck.Module.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="bin\Debug\netcoreapp3.1\docs\docs\tmp" />
+      <Folder Include="bin\Debug\netcoreapp3.1\docs\tmp" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="bin\Debug\netcoreapp3.1\docs\docs\out.docx" />
+      <None Include="bin\Debug\netcoreapp3.1\docs\docs\template_arbeitskleidung.docx" />
+      <None Include="bin\Debug\netcoreapp3.1\docs\docs\template_einsatzkleidung.docx" />
+      <None Include="bin\Debug\netcoreapp3.1\docs\docs\template_handschuhe.docx" />
+      <None Include="bin\Debug\netcoreapp3.1\docs\docs\template_helm.docx" />
+      <None Include="bin\Debug\netcoreapp3.1\docs\docs\template_kopfschutzhaube.docx" />
+      <None Include="bin\Debug\netcoreapp3.1\docs\docs\template_schuhe.docx" />
+      <None Remove="bin\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="bin\Debug\netcoreapp3.1\docs\out.docx" />
+      <Content Include="bin\Debug\netcoreapp3.1\docs\template_arbeitskleidung.docx" />
+      <Content Include="bin\Debug\netcoreapp3.1\docs\template_einsatzkleidung.docx" />
+      <Content Include="bin\Debug\netcoreapp3.1\docs\template_handschuhe.docx" />
+      <Content Include="bin\Debug\netcoreapp3.1\docs\template_helm.docx" />
+      <Content Include="bin\Debug\netcoreapp3.1\docs\template_kopfschutzhaube.docx" />
+      <Content Include="bin\Debug\netcoreapp3.1\docs\template_schuhe.docx" />
+    </ItemGroup>
+
+</Project>
